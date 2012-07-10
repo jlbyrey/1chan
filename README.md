@@ -11,7 +11,7 @@
 
 Для запуска движка вам понадобится php5-fpm (встроен в php5), nginx, mysql, redis.io, dklab_realplexor и sphinxsearch.
 
-1. Установите и настройке php5-fpm и nginx.
+1. Установите и настройте php5-fpm и nginx.
 2. Залейте код в директорию, например /var/www.
 3. Настройте конфигурацию nginx для работы с php5-fpm, при этом необходимо установить rewrite rule для location /, например вот так:
 
