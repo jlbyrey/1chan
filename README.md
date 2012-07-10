@@ -40,21 +40,6 @@
             }
         }
 
-4. Установите Dklab\_Realplexor, согласно документации: http://dklab.ru/lib/dklab_realplexor/
-Для добавления в nignx используйте:
-
-	    server {
-	        listen   80;
-	        server_name pipe.1chan.ru;
-		    
-	        location / {
-	            proxy_pass http://127.0.0.1:8088;
-	            proxy_connect_timeout 15;
-	            proxy_read_timeout 90;
-	            proxy_send_timeout 90;
-	        }
-	    }
-
 5. Установите redis.io последней версии с сайта: http://redis.io/
 6. Установите redis php5 расширение: https://github.com/nicolasff/phpredis
 7. Установите MySQL и отредактируйте файлы /app/config.php и /1chan.conf, указав настройки подключения. Залейте первоначальный дамп из файла /dump.sql.
