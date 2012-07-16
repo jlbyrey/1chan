@@ -30,8 +30,7 @@ class TemplateHelper
 	public static function date($pattern, $time = false) {
 	    // Не горжусь этим хаком:
 	    if ($pattern == 'Y-m-d @ H:i') {
-	        $offset = 60 * 60 * 3;
-	        return date($pattern, $time ? $time - $offset : time() - $offset);
+	        return date($pattern, $time ? $time : time());
 	    }
 	
 		if (date('Y') == date('Y', $time))
